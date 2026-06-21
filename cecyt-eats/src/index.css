@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: #f8f8f8;
+    color: #1c1c1c;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+
+/* Variables generales del diseño */
+:root {
+
+    --rosa-principal: #c985a3;
+    --rosa-claro: #e9b6c9;
+    --rosa-boton: #d68aa7;
+
+    --gris-fondo: #f4f4f4;
+    --blanco: #ffffff;
+
+    --texto: #111111;
+
+    --verde-stock: #b8d6ae;
+    --rojo-stock: #f28c8c;
+
+    --sombra:
+        0px 10px 25px rgba(0,0,0,0.18);
+
+    --radio:
+        25px;
+}
+
+
+/* Botones generales */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* Inputs generales */
+input {
+    font-family: inherit;
+}
+
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--rosa-principal);
+    border-radius: 20px;
+}

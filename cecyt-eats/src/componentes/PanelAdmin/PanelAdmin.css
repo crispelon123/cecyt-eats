@@ -1,0 +1,722 @@
+/* ==========================
+        PANEL ADMIN
+========================== */
+
+
+.contenedor-panel{
+
+    min-height:100vh;
+
+    background:#f7f7f7;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+
+
+
+
+.header-panel{
+
+
+    background:#c985a3;
+
+
+    color:#111;
+
+
+    padding:18px 30px;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+.titulo-panel{
+
+
+    font-size:28px;
+
+
+    font-weight:900;
+
+
+}
+
+
+
+
+
+
+.info-admin{
+
+
+    display:flex;
+
+
+    gap:15px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.btn-salir-admin{
+
+
+    background:white;
+
+
+    color:#111;
+
+
+    border:none;
+
+
+    border-radius:25px;
+
+
+    padding:10px 20px;
+
+
+    cursor:pointer;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+/* MENU */
+
+
+.pestanas-panel{
+
+
+    background:#d9a3b8;
+
+
+    display:flex;
+
+
+    gap:5px;
+
+
+    padding:10px 20px;
+
+
+}
+
+
+
+
+
+
+.btn-pestana{
+
+
+    background:transparent;
+
+
+    border:none;
+
+
+    padding:12px 20px;
+
+
+    cursor:pointer;
+
+
+    font-size:16px;
+
+
+    color:#111;
+
+
+    border-radius:15px;
+
+
+}
+
+
+
+
+
+.btn-pestana.activa{
+
+
+    background:#f3d7e2;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+.cuerpo-panel{
+
+
+    padding:30px;
+
+
+}
+
+
+
+
+
+
+.subtitulo-seccion{
+
+
+    color:#111;
+
+
+    font-size:25px;
+
+
+    margin-bottom:20px;
+
+
+    font-weight:900;
+
+
+}
+
+
+
+
+
+
+
+/* TARJETAS */
+
+
+.cuadricula-metricas{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:25px;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+
+.tarjeta-metrica{
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    padding:30px;
+
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+
+
+.tarjeta-metrica:nth-child(1){
+
+
+    background:#c8eebd;
+
+
+}
+
+
+
+.tarjeta-metrica:nth-child(2){
+
+
+    background:#d5e7ff;
+
+
+}
+
+
+
+.tarjeta-metrica:nth-child(3){
+
+
+    background:#f3ffb3;
+
+
+}
+
+
+
+.tarjeta-metrica:nth-child(4){
+
+
+    background:#d7b7e9;
+
+
+}
+
+
+
+
+
+
+
+.numero-metrica{
+
+
+    font-size:28px;
+
+
+    font-weight:900;
+
+
+}
+
+
+
+
+
+
+
+.etiqueta-metrica{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* TABLAS */
+
+
+.tabla-ordenes,
+.tabla-inventario{
+
+
+    width:100%;
+
+
+    background:white;
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+
+.tabla-ordenes th,
+.tabla-inventario th{
+
+
+    background:#eeeeee;
+
+
+    color:#111;
+
+
+    padding:15px;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+
+.tabla-ordenes td,
+.tabla-inventario td{
+
+
+    padding:14px;
+
+
+    border-bottom:1px solid #eee;
+
+
+}
+
+
+
+
+
+
+
+
+/* ESTADOS */
+
+
+.estado-pendiente{
+
+
+    background:#fff9a8;
+
+
+    padding:5px 12px;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+.estado-preparando{
+
+
+    background:#cfe5ff;
+
+
+    padding:5px 12px;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+
+.estado-listo-para-entrega{
+
+
+    background:#c8efbd;
+
+
+    padding:5px 12px;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+.estado-entregado{
+
+
+    background:#ddd;
+
+
+    padding:5px 12px;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+
+
+
+/* INVENTARIO */
+
+
+.btn-nuevo-producto{
+
+
+    background:#9bd26a;
+
+
+    border:none;
+
+
+    border-radius:20px;
+
+
+    padding:10px 20px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+.btn-editar{
+
+
+    background:#e5c400;
+
+
+    color:#111;
+
+
+    border:none;
+
+
+    border-radius:20px;
+
+
+    padding:8px 18px;
+
+
+}
+
+
+
+
+
+.btn-eliminar{
+
+
+    background:#d96c6c;
+
+
+    border:none;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    padding:8px 18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* FORMULARIO */
+
+
+.formulario-producto{
+
+
+    background:white;
+
+
+    border-radius:20px;
+
+
+    padding:25px;
+
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+
+.formulario-producto h3{
+
+
+    color:#111;
+
+
+}
+
+
+
+
+
+.grilla-formulario{
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+
+.grupo-form input{
+
+
+    padding:10px;
+
+
+    border:1px solid #bbb;
+
+
+    border-radius:10px;
+
+
+}
+
+
+
+
+
+.btn-guardar{
+
+
+    background:#9bd26a;
+
+
+    color:#111;
+
+
+    border:none;
+
+
+    border-radius:20px;
+
+
+    padding:10px 25px;
+
+
+}
+
+
+
+
+
+.btn-cancelar{
+
+
+    background:#eee;
+
+
+    border:none;
+
+
+    border-radius:20px;
+
+
+    padding:10px 25px;
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:800px){
+
+
+.cuadricula-metricas{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+.grilla-formulario{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+}
