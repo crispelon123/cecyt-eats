@@ -1,5 +1,14 @@
 // src/servicios/api.js 
-const URL_BASE = 'http://localhost:3001/api'; 
+// src/servicios/api.js 
+// Usa la variable de entorno de Vite: 
+// - En desarrollo: http://localhost:3001/api 
+// - En producción: https://cecyt-eats-api.onrender.com/api 
+const URL_BASE = import.meta.env.VITE_API_URL || 
+'http://localhost:3001/api'; 
+  
+// El resto del archivo permanece exactamente igual... 
+export const registrarUsuario = async (datos) => { /* ... */ }; 
+// ... todas las demás funciones sin cambios 
   
 // ── USUARIOS ───────────────────────────────────────────────────────── 
 export const registrarUsuario = async (datos) => { 
