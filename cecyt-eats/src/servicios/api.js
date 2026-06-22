@@ -11,13 +11,32 @@ const URL_BASE = import.meta.env.VITE_API_URL ||
 // ... todas las demás funciones sin cambios 
   
 // ── USUARIOS ───────────────────────────────────────────────────────── 
- const res = await fetch(`${URL_BASE}/usuarios/registro`, { 
-    method:  'POST', 
-    headers: { 'Content-Type': 'application/json' }, 
-    body:    JSON.stringify(datos), 
-  }); 
-  return res.json(); 
-; 
+ // ── USUARIOS ───────────────────────────────────────────────────────── 
+
+export const registrarUsuario = async (datos) => {
+  const res = await fetch(`${URL_BASE}/usuarios/registro`, {
+    method: 'POST',
+    headers: { 
+      'Content-Type': 'application/json' 
+    },
+    body: JSON.stringify(datos),
+  });
+
+  return res.json();
+};
+
+
+export const iniciarSesion = async (datos) => {
+  const res = await fetch(`${URL_BASE}/usuarios/login`, {
+    method: 'POST',
+    headers: { 
+      'Content-Type': 'application/json' 
+    },
+    body: JSON.stringify(datos),
+  });
+
+  return res.json();
+};
   
 export const iniciarSesion = async (datos) => { 
   const res = await fetch(`${URL_BASE}/usuarios/login`, { 
