@@ -1,16 +1,7 @@
-// src/servicios/api.js 
-// src/servicios/api.js 
-// Usa la variable de entorno de Vite: 
-// - En desarrollo: http://localhost:3001/api 
-// - En producción: https://cecyt-eats-api.onrender.com/api 
-const URL_BASE = import.meta.env.VITE_API_URL || 
-'http://localhost:3001/api'; 
-  
-// El resto del archivo permanece exactamente igual... 
 
-// ... todas las demás funciones sin cambios 
+const URL_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3001/api'; 
   
-// ── USUARIOS ───────────────────────────────────────────────────────── 
+
  // ── USUARIOS ───────────────────────────────────────────────────────── 
 
 export const registrarUsuario = async (datos) => {
@@ -38,14 +29,6 @@ export const iniciarSesion = async (datos) => {
   return res.json();
 };
   
-export const iniciarSesion = async (datos) => { 
-  const res = await fetch(`${URL_BASE}/usuarios/login`, { 
-    method:  'POST', 
-    headers: { 'Content-Type': 'application/json' }, 
-    body:    JSON.stringify(datos), 
-  }); 
-  return res.json(); 
-}; 
   
 // ── PRODUCTOS ──────────────────────────────────────────────────────── 
 export const obtenerProductos = async () => { 
