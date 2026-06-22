@@ -11,14 +11,14 @@ export const registrarUsuario = async (datos) => { /* ... */ };
 // ... todas las demás funciones sin cambios 
   
 // ── USUARIOS ───────────────────────────────────────────────────────── 
-export const registrarUsuario = async (datos) => { 
+
   const res = await fetch(`${URL_BASE}/usuarios/registro`, { 
     method:  'POST', 
     headers: { 'Content-Type': 'application/json' }, 
     body:    JSON.stringify(datos), 
   }); 
   return res.json(); 
-}; 
+; 
   
 export const iniciarSesion = async (datos) => { 
   const res = await fetch(`${URL_BASE}/usuarios/login`, { 
