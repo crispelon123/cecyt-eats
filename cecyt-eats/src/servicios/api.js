@@ -7,12 +7,11 @@ const URL_BASE = import.meta.env.VITE_API_URL ||
 'http://localhost:3001/api'; 
   
 // El resto del archivo permanece exactamente igual... 
-export const registrarUsuario = async (datos) => { /* ... */ }; 
+
 // ... todas las demás funciones sin cambios 
   
 // ── USUARIOS ───────────────────────────────────────────────────────── 
-
-  const res = await fetch(`${URL_BASE}/usuarios/registro`, { 
+ const res = await fetch(`${URL_BASE}/usuarios/registro`, { 
     method:  'POST', 
     headers: { 'Content-Type': 'application/json' }, 
     body:    JSON.stringify(datos), 
